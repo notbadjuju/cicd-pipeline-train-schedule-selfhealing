@@ -38,6 +38,9 @@ spec:
           httpGet:
           path: /
           port: 8080
+          httpHeaders:
+          - name: Custom-Header
+            value: Awesome
         initialDelaySeconds: 15
         timeoutSeconds: 1
         periodSeconds: 10
